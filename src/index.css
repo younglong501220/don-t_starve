@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'IM Fell English', 'Cinzel', Georgia, serif;
+    background-color: #080605;
+    color: #e6ded4;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-parchment {
+  font-family: 'IM Fell English', 'MedievalSharp', serif;
+}
+
+/* Don't Starve Gothic Parchment Border */
+.gothic-border {
+  border: 3px solid #5a4332;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8), 0 4px 15px rgba(0, 0, 0, 0.9);
+  background: linear-gradient(145deg, rgba(32, 23, 17, 0.95), rgba(18, 13, 10, 0.96));
+}
+
+.gothic-border-highlight {
+  border-color: #c9933b;
+  box-shadow: 0 0 12px rgba(201, 147, 59, 0.4), inset 0 0 8px rgba(0,0,0,0.8);
+}
+
+/* Charlie slash animation */
+@keyframes clawSlash {
+  0% { transform: scale(0.9) rotate(-15deg); opacity: 0; }
+  25% { transform: scale(1.05) rotate(0deg); opacity: 0.95; }
+  100% { transform: scale(1.1) rotate(15deg); opacity: 0; }
+}
+
+.animate-claw {
+  animation: clawSlash 0.35s ease-out forwards;
+}
+
+/* Custom scrollbar for crafting */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #19120c;
+}
+::-webkit-scrollbar-thumb {
+  background: #5a4332;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8b684a;
+}

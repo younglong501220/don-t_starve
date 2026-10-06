@@ -1,0 +1,6 @@
+{
+  "name": "Don't Starve Web Survival",
+  "description": "2.5D Don't Starve survival game built with Three.js billboard rendering, 360 camera rotation, day-night clock, sanity hallucinations, crafting tech tree, and Charlie shadow attacks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
